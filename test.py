@@ -1,6 +1,9 @@
-import imit
+import png
 
-i = imit.PNG_img("a.png")
-i.resize(1920, 1256)
+i = png.PNG_img("pngwing.com.png")
 
-print(i.chunks)
+print(i.info())
+
+i.rresize(100, 100)
+
+print(i.info())
